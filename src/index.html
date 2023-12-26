@@ -29,40 +29,40 @@
 
 
   <nav class="navbar navbar-expand-md shadow-sm bg-success rounded-5  ">
-    <div class="container-md ">
+    <div class="container-md " >
       <!--LOGO-->
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand mx-3" href="#">
         <img alt="Jovian Logo" src="https://i.imgur.com/JRA5Q8a.png" height="30" class="d-md-none" />
         <img alt="Jovian Logo" src="https://i.imgur.com/m1wXjqw.png" height="30" class="d-none d-md-inline" />
       </a>
       <!--TOGGLE BUTTON-->
-      <button class="navbar-toggler mt-2 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      <button class="navbar-toggler mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse justify-content-end justify-content-xs-start  " id="navbarNav" style="font-weight: 1500; 
+      <div class="collapse navbar-collapse  justify-content-md-end  " id="navbarNav" style="font-weight: 1500; 
       ">
-        <ul class="navbar-nav mx-5 text-center >
-          <li class=" nav-item col-md-3">
-          <a class="nav-link text-bg-light mx-2 rounded-5 mt-2 " href="https://jovian.com/learn" target="_blank">
-            Courses
+        <ul class="navbar-nav mx-5 text-center">
+          <li class="nav-item col-md-3">
+          <a class="nav-link text-bg-light mx-2 rounded-5 mt-2 text-success " href="https://jovian.com/learn" target="_blank">
+            <strong>Courses</strong>
           </a>
           </li>
-          <li class="nav-item col-md-3  ">
-            <a class="nav-link text-bg-light mx-2 rounded-5 mt-2" href="https://jovian.com/learn" target="_blank">
-              Programs
+          <li class="nav-item col-md-3 ">
+            <a class="nav-link text-bg-light mx-2 rounded-5 mt-2 text-success" href="https://jovian.com/learn" target="_blank">
+              <strong>Programs</strong>
             </a>
           </li>
           <li class="nav-item col-md-3">
-            <a class="nav-link text-bg-light mx-2 rounded-5 mt-2  " href="https://youtube.com/@jovianhq"
+            <a class="nav-link text-bg-light mx-2 rounded-5 mt-2 text-success" href="https://youtube.com/@jovianhq"
               target="_blank">
-              Youtube
+              <strong>Youtube</strong>
 
             </a>
           </li>
-          <li class="nav-item col-md-5">
-            <a class="btn btn-primary mx-5 mt-0 ms-0 rounded-5 mt-2" href="https://jovian.com/login"
+          <li class="nav-item col-md-4 offset-md-2">
+            <a class="btn btn-primary mx-4 mt-0 ms-0 rounded-5 mt-2 mb-3 " href="https://jovian.com/login"
               target="_blank">Sign In</a>
           </li>
         </ul>
@@ -79,7 +79,7 @@
       </div>
       <div class="col-12 col-lg-6">
         <h1 class="display-5 fw-bold lh-1 mb-3 text-center text-lg-start">New Opportunities at Jovian</h1>
-        <p class="lead">
+        <p class="lead" style="text-align: justify;">
           At Jovian, we're on a mission to build the world's most highly
           reputed technical university, and we're building it completely
           online. We offer several beginner friendly courses that are taken by
@@ -88,13 +88,13 @@
         <p class="lead">We also offer 2 industry-focused bootcamps:</p>
         <ol class="lead">
           <li>
-            <a href="https://www.jovian.com/full-stack-developer-bootcamp">
-              Jovian Full Stack Developer Bootcamp
+            <a style="text-decoration: none;" class="text-success" href="https://www.jovian.com/full-stack-developer-bootcamp">
+              <strong>Jovian Full Stack Developer Bootcamp</strong>
             </a>
           </li>
-          <li>
-            <a href="https://www.jovian.com/data-science-bootcamp">
-              Jovian Data Science Bootcamp
+          <li >
+            <a style="text-decoration: none;" class="text-success" href="https://www.jovian.com/data-science-bootcamp">
+              <strong>Jovian Data Science Bootcamp</strong>
             </a>
           </li>
         </ol>
@@ -204,11 +204,136 @@
   <!--APPLICATION FORM-->
   <div class="container px-4 mt-5">
     <h2 class="text-center" >Submit Your Application</h2>
+    <form
+    class="offset-lg-2 col-lg-8"
+    actio="https://formbold.com/s/3wvKl"
+    method="POST"
+    enctype="multipart/form-data"
+    >
+    <!--NAME-->
+    <div class="mb-3 col-sm-6">
+      <label for="fullname" class="form-label"> Full Name </label>
+      <input
+        type="text"
+        class="form-control"
+        name="name"
+        required
+        placeholder="John Doe"
+        id="fullname"
+      />
+    </div>
+    <!--EMAIL-->
+    <div class="mb-3 col-sm-6">
+      <label for="email" class="form-label"> Email address </label>
+      <input
+        type="email"
+        class="form-control"
+        name="email"
+        placeholder="john@doe.com"
+        id="email"
+        aria-describedby="emailHelp"
+        required
+      />
+      <div id="emailHelp" class="form-text">
+        We'll never share your email with anyone else.
+      </div>
+    </div>
+     <!--PHONE-->
+    <div class="mb-3 col-sm-6">
+      <label for="phone" class="form-label">Phone</label>
+      <input
+        type="tel"
+        class="form-control"
+        id="phone"
+        placeholder="+919898989898"
+        name="phone"
+        required
+      />
+    </div>
+    <!--DOB-->
+    <div class="mb-3 col-sm-6">
+      <label for="dob" class="form-label">Date of Birth</label>
+      <input
+        type="date"
+        class="form-control"
+        id="dob"
+        name="dob"
+        required
+      />
+    </div>
+    <!--POSITION-->
+    <div class="mb-3 col-sm-6">
+      <label for="position" class="form-label">Position Applied For</label>
+      <select class=" form-select form-select-md " aria-label="Default select example" required>
+        <option selected>Select a position</option>
+        <option value="frontend developer">Frontend Developer</option>
+        <option value="full stack developer">Full Stack Developer</option>
+        <option value="data scientist">Data Scientist</option>
+        <option value="ml engineer ">ML Engineer</option>
+      </select>
+    </div>
+    <!--RESUME-->
+    <div class="mb-3 col-sm-6">
+      <label for="resume" class="form-label">Upload Resume</label>
+      <input
+        type="file"
+        class="form-control"
+        id="resume"
+        name="resume"
+        required
+      />
+    </div
+    <!--COVER LETTER-->
+    <div class="mb-3">
+      <label for="resume" class="form-label">Cover Letter</label>
+      <textarea
+        placeholder="Why should we consider you for the job?"
+        class="form-control"
+        id="resume"
+        name="resume"
+        rows="5"
+        required
+      ></textarea>
+    </div>
+
+<!--TERMS-->
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="terms" />
+      <label class="form-check-label" for="terms"
+        >I agree to the terms and coditions.</label
+      >
+    </div>
+    <!--SUBMIT BUTTON-->
+    <button type="submit" class="btn btn-success">
+      Submit Application
+    </button>
+    
+    </form>
 
   </div>
 
   <!--FOOTER-->
-  <div>Footer</div>
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-top pt-3 mb-3 ">
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-success"> <strong>Courses</strong></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-success"> <strong>Programs</strong></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-success"> <strong>YouTube</strong></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-success"> <strong>Sign In</strong></a>
+        </li>
+      </ul>
+      <p class="text-center text-body-secondary">
+        © 2023 Jovian (SwiftAce Inc.)
+      </p>
+    </footer>
+  </div> 
 
 </body>
 
